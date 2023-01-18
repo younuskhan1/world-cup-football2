@@ -143,10 +143,6 @@ body {
     gap: 15px;
 }
 
-.card {
-    border: 1px solid black;
-    border-radius: 10px;
-}
 
 .flag-div {
     display: flex;
@@ -161,26 +157,11 @@ body {
     border: 1px solid black;
     border-radius: 10px;
     padding-top: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .matches-time {
     text-align: center;
     padding-bottom: 10px;
-}
-
-.card-image img {
-    width: 100%;
-}
-
-.card-text {
-    padding: 15px;
-}
-
-.card-text h5 {
-    padding-top: 15px;
-    padding-bottom: 15px;
 }
 
 .view-button {
