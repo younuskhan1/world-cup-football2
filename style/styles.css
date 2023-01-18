@@ -1,0 +1,389 @@
+/* google font */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*---------- header css is started ----------*/
+
+.header-container {
+    width: 90%;
+    height: 100%;
+    margin: 50px auto;
+    background-color: midnightblue;
+    border-radius: 30px;
+}
+
+.website-poster {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.poster-text {
+    width: 50%;
+}
+
+.poster-image {
+    width: 50%;
+}
+
+.poster-text h1 {
+    color: aqua;
+    font-size: 3rem;
+}
+
+.poster-text p {
+    color: aqua;
+    font-size: 1rem;
+    padding-top: 30px;
+
+}
+
+.poster-text input {
+    padding: 15px 40px;
+    background-color: deeppink;
+    margin-top: 40px;
+    border-radius: 7px;
+    font-size: 1rem;
+    color: yellow;
+    cursor: pointer;
+    transition: background-color 1s ease-in-out;
+    font-family: 'Roboto Slab', serif;
+}
+
+.poster-text input:hover {
+    background-color: indigo;
+    color: cyan;
+}
+
+.poster-image img {
+    width: 100%;
+    height: 34.5rem;
+    padding-top: 35px;
+}
+
+/*---------- header css is ended ----------*/
+/* ---------main section css starts-------- */
+.main-container {
+    width: 90%;
+    height: 100%;
+    margin: 40px auto;
+    /* background-color: midnightblue; */
+    border-radius: 30px;
+}
+
+.main-section {
+    display: flex;
+    gap: 20px;
+}
+
+.button-section {
+    padding: 20px;
+    background-color: midnightblue;
+    border-radius: 7px;
+    width: 250px;
+    height: 250px;
+}
+
+.button input {
+    display: block;
+    padding: 15px 40px;
+    background-color: white;
+    gap: 20px;
+    border-radius: 7px;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif
+}
+
+#second-button {
+    margin-bottom: 20px;
+}
+
+#first-button {
+    margin-bottom: 20px;
+}
+
+#first-button input {
+    background-color: orangered;
+    color: white;
+}
+
+#second-button input {
+    padding: 15px 66px;
+}
+
+#third-button input {
+    padding: 15px 83px;
+}
+
+.font-awesome {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-section {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.flag-div {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
+
+}
+
+.time-table {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.matches-time {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.card-image img {
+    width: 100%;
+}
+
+.card-text {
+    padding: 15px;
+}
+
+.card-text h5 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.view-button {
+    padding: 15px 40px;
+    background-color: deeppink;
+    margin-top: 40px;
+    border-radius: 7px;
+    font-size: 1rem;
+    color: yellow;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    visibility: hidden;
+    transition: background-color 1s ease-in-out;
+    font-family: 'Roboto Slab', serif;
+}
+
+.view-button:hover {
+    background-color: indigo;
+    color: cyan;
+}
+
+/* ---------main section css starts-------- */
+/* ---------footer css is started-------- */
+footer {
+    width: 100%;
+    height: 100%;
+    background-color: midnightblue;
+}
+
+footer h3 {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    color: aqua;
+    font-size: 2rem;
+    text-align: center;
+}
+
+footer hr {
+    border: 1px solid aqua;
+    width: 90%;
+    margin: 0 auto;
+}
+
+ul>li>a {
+    text-decoration: none;
+    color: aqua;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+ul>li {
+    list-style: none;
+}
+
+.contact-us {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+.contact-us a {
+    font-size: 3rem;
+    color: aqua;
+}
+
+/* ---------footer css is ended-------- */
+
+/*-------- media queries for small devices----------- */
+
+@media only screen and (max-width: 688px) {
+    .header-container {
+        height: 100%;
+    }
+
+    .website-poster {
+        flex-direction: column;
+        height: 100%;
+        /* padding: 40px; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .poster-text {
+        width: 100%;
+    }
+
+    .poster-image {
+        width: 100%;
+    }
+
+    .poster-image img {
+        width: 100%;
+        height: 28rem;
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+
+    .poster-text h1 {
+        text-align: center;
+    }
+
+    .poster-text p {
+        text-align: center;
+        white-space: nowrap;
+        /* height: 93px;
+        width: 90%; */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .poster-text input {
+        display: block;
+        margin: 20px auto;
+        padding: 25Px;
+
+    }
+
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-section {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+
+    }
+
+    .button-section {
+        background-color: white;
+        padding-top: 0px;
+
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/*-------- media queries for medium devices----------- */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-section {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        /* justify-content: center; */
+
+    }
+
+    .button-section {
+        background-color: white;
+        padding-top: 0px;
+        border-radius: 7px;
+        width: 70%;
+        height: 100%;
+
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .poster-text input {
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+
+    }
+
+    .view-button {
+        visibility: visible;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    ul>li>a {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+}
